@@ -1,0 +1,109 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+
+@Article{andersson2015mother,
+  Title                    = {Mother-to-child transmission of hepatitis B virus in sub-Saharan Africa: time to act},
+  Author                   = {Andersson, Monique I and Rajbhandari, Ruma and Kew, Michael C and Vento, Sandro and Preiser, Wolfgang and Hoepelman, Andy IM and Theron, Gerhard and Cotton, Mark and Cohn, Jennifer and Glebe, Dieter and others},
+  Journal                  = {The Lancet Global Health},
+  Year                     = {2015},
+  Number                   = {7},
+  Pages                    = {e358--e359},
+  Volume                   = {3},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{busenberg1982models,
+  Title                    = {Models of vertically transmitted diseases with sequential-continuous dynamics},
+  Author                   = {Busenberg, Stavros and Cooke, Kenneth L},
+  Journal                  = {Nonlinear phenomena in mathematical sciences},
+  Year                     = {1982},
+  Pages                    = {179--187},
+
+  Publisher                = {Academic Press New York}
+}
+
+@Article{pan2016tenofovirToPrevent,
+  Title                    = {Tenofovir to Prevent Hepatitis B Transmission in Mothers with High Viral Load},
+  Author                   = {Pan, Calvin Q and Duan, Zhongping and Dai, Erhei and Zhang, Shuqin and Han, Guorong and Wang, Yuming and Zhang, Huaihong and Zou, Huaibin and Zhu, Baoshen and Zhao, Wenjing and others},
+  Journal                  = {New England Journal of Medicine},
+  Year                     = {2016},
+  Number                   = {24},
+  Pages                    = {2324--2334},
+  Volume                   = {374},
+
+  Publisher                = {Mass Medical Soc}
+}
+
+@Article{Pan2012,
+  Title                    = {An algorithm for risk assessment and intervention of mother to child transmission of hepatitis B virus},
+  Author                   = {Pan, Calvin Q and Duan, Zhong--Ping and Bhamidimarri, Kalyan R and Zou, Huai--Bin and Liang, Xiao--Feng and Li, Jie and Tong, Myron J},
+  Journal                  = {Clinical Gastroenterology and Hepatology},
+  Year                     = {2012},
+  Number                   = {5},
+  Pages                    = {452--459},
+  Volume                   = {10},
+
+  __markedentry            = {[jamesazam:6]},
+  Owner                    = {jamesazam},
+  Publisher                = {Elsevier},
+  Timestamp                = {2016.06.17}
+}
+
+@Article{shimakawa2016mother,
+  Title                    = {Mother-to-child transmission of hepatitis B in sub-Saharan Africa},
+  Author                   = {Shimakawa, Yusuke and Toure-Kane, Coumba and Mendy, Maimuna and Thursz, Mark and Lemoine, Maud},
+  Journal                  = {The Lancet Infectious Diseases},
+  Year                     = {2016},
+  Number                   = {1},
+  Pages                    = {19--20},
+  Volume                   = {16},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{tharmaphornpilas2009increasedRisk,
+  Title                    = {Increased risk of developing chronic HBV infection in infants born to chronically HBV infected mothers as a result of delayed second dose of hepatitis B vaccination},
+  Author                   = {Tharmaphornpilas, Piyanit and Rasdjarmrearnsook, Aim-orn and Plianpanich, Saowanee and Sa-nguanmoo, Pattaratida and Poovorawan, Yong},
+  Journal                  = {Vaccine},
+  Year                     = {2009},
+  Number                   = {44},
+  Pages                    = {6110--6115},
+  Volume                   = {27},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{thio2015global,
+  Title                    = {Global elimination of mother-to-child transmission of hepatitis B: revisiting the current strategy},
+  Author                   = {Thio, Chloe L and Guo, Nan and Xie, Chan and Nelson, Kenrad E and Ehrhardt, Stephan},
+  Journal                  = {The Lancet Infectious Diseases},
+  Year                     = {2015},
+  Number                   = {8},
+  Pages                    = {981--985},
+  Volume                   = {15},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{tran2009management,
+  Title                    = {Management of hepatitis B in pregnancy: weighing the options.},
+  Author                   = {Tran, TRAM T},
+  Journal                  = {Cleveland Clinic journal of medicine},
+  Year                     = {2009},
+  Pages                    = {S25--9},
+  Volume                   = {76}
+}
+
+@Article{xu2013nextstep,
+  Title                    = {The next step in controlling HBV in China},
+  Author                   = {Xu, Yuanyong and Liu, Huihui and Wang, Yong and Hao, Rongzhang and Li, Zhenjun and Song, Hongbin},
+  Journal                  = {Bmj},
+  Year                     = {2013},
+  Pages                    = {f4503},
+  Volume                   = {347},
+
+  Publisher                = {British Medical Journal Publishing Group}
+}
+

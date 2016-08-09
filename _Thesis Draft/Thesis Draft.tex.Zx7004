@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb}
+\usepackage[scale=0.75]{geometry}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\begin{document}
+\begin{titlepage}
+	\pagenumbering{gobble} %removes the page numbering
+		\title{Mathematical Modeling of Hepatitis B Vertical Transmission in sub-Saharan Africa: A Focus on the Impact of Vaccination and Treatment on the Long Run Dynamics of the Disease.}
+		\maketitle
+		\begin{center}
+			Thesis Draft\\ for\\ James Mba Azam\\
+		\end{center}
+		\begin{center}
+			(MSc. Mathematical Sciences, SACEMA, Stellenbosch University.)
+		\end{center}
+	
+\end{titlepage}
+\pagenumbering{arabic} %returns the page numbering
+\section*{Introduction}
+Over most parts of the globe, hepatitis B(HBV) is causing a great health havoc. It is, however, not evenly distributed over the globe, as it is almost rare in most advanced countries whilst remaining highly endemic in sub-Saharan Africa and parts of Asia\cite{medley2001hepatitis} . The World Health Organization (W.H.O) has made it a priority to reduce the prevalence of the disease to certain levels within the next decade. Several countries are continually implementing revised strategies geared towards reducing the hepatitis B prevalence. China, for instance, has a target of reducing its HBV prevalence below 1\% within the next decade \cite{pang2010DynamicalBehaviour} . Countries in sub-Saharan Africa, however, have not put in effective measures to reduce the impact of the disease. 
+
+HBV is acquired  through sexual contact, blood and serum, and after long exposures to the fluids of highly viraemic individuals. This is termed horizontal transmission. It can also be transmitted from a mother to her child(vertical) either prenatally, or neonatally. The infection transmission dynamics is such that, mother-to-child(vertical) transmission is the most common\cite{tran2009management}. Some authors like \cite{tran2009management} have posited that, in order to reduce the burden of the disease, it is important to reduce the number of infections arising from the vertical transmission route. Also,  chronic hepatitis B is directly related to the age at which individuals acquire the infection\cite{tran2009management} . It is therefore pertinent that vertical transmission is reduced so as to further deplete the number of chronically infected individuals in the long run. 
+\section{Aim}
+This research is intended firstly, to serve as a source to refer to in considering the incorporation of a first dose of vaccination to infants, as well as, the treatment of hepatitis B infected mothers in sub-Saharan Africa.  Secondly, this research aims to improve the perception of health policy makers on the importance of implementing stringent measures to reduce hepatitis B infection in  sub-Saharan Africa since the disease has a major contribution to the health burden of the population.
+
+\section{Research Questions}
+The intended work aims to answer the question and sub-questions: \label{section: research question}
+Can Hepatitis B be eradicated from Sub-Saharan Africa (SSA) within a couple of generations, given the intervention is limited to: 
+	\begin{enumerate} 
+		\item treatment of the mothers only,  \label{sub question 1}
+		\item first dose vaccine and/or the routine vaccination of the infants only, \label{sub question 2}
+		\item a combination of sub-questions \ref{sub question 1} and \ref{sub question 2}
+	\end{enumerate}
+
+
+
+\section{Objectives}
+In trying to answer the research questions above, the authors will set out to:
+	\begin{enumerate}
+		\item study hepatitis B vertical transmission which captures interventions applied to both the mothers and their newborns,
+		\item investigate whether the proposed interventions affect the population dynamics of the infected infants,
+		\item determine the contribution of the infected infants to the disease dynamics in the general population over time,
+		\item provide recommendations towards further research aimed at eliminating the disease.
+		
+	\end{enumerate}
+
+\section{Literature Review}
+\subsection{Preventing Hepatitis B Mother-to-Child Transmission}
+Several authors for instance, those of \cite{andersson2015mother, xu2013nextstep,tran2009management,shimakawa2016mother}, have posited that we will have to concentrate on preventing the mother-to-child transmission  if eradication is to be achieved in the near future. The paper \cite{Pan2012} did a review of articles published between 1975-2011 on HBV mother-to-child transmission. The authors deduced that administering Hb immunoglobulin alongside the Hb vaccine between the time of birth and at most 12 hours after exposure, combined with administering the routine vaccination regimen between 6-12 months to an infant, will provide an approximate 95\% chance of preventing the perinatal transmission of HBV from their HBsAg-positive pregnant mother. Concerning the use of tenofovir as immunoprophylaxis for reducing HBV MTCT, a very recent study in the paper \cite{pan2016tenofovirToPrevent} has corroborated that it might be a better and possibly, safer option in the near future, as predicted by the authors in \cite{xu2013nextstep}. More importantly, it has been been suggested that the second dose must be administered in a very timely fashion, as a study by \cite{tharmaphornpilas2009increasedRisk} has proven that a delay in the subsequent vaccines could prove to be a hindrance in protecting the infants against the transmission of HBV.
+
+\subsection{HBV Mother-to-Child Transmission Risk Factors}
+According to  \cite{Pan2012}, an efficient way to prevent MTCT of HBV is to assess the risk of MTCT, and to identify the mothers who possessed the most risk so as to administer the interventions to prevent MTCT. Eventually, they listed: maternal level of HBV DNA $>200,000$ IU/mL, positive test(s) for the HB envelope Antigen(HBeAg) and HB surface Antigen(HBsAg), pregnancy complications such as threatened pretem labour, or prolonged labour, and failure of the immunoprophylaxis in children who had received it, as the risk factors to consider. For simplicity, the model in this document will consider the following risk factors stemming from those listed in the paper \cite{Pan2012}: HBV DNA of pregnant women greater than $200,000$IU/mL, and pregnant women who are both HBeAg and HBsAg positive. 
+
+\section{Research Design and Methodology}
+The researchers will apply quantitative methods in order to achieve the objectives listed. Since we intend to study the contribution of the birth dose and treatment of infected mothers to the transmission dynamics of the disease, we will employ population-based deterministic ordinary differential equations(ODE) models which we will adapt and modify from the existing literature. Population-based deterministic models are proper at this stage since we are only interested in how the population dynamics behave when the suggested interventions are applied. Other tools which are appropriate in achieving the objectives could include: delay differential equations models so as to introduce a delay in terms of various events such as the kick-start of immunity, a delay in taking the routine vaccination, and so on. However, this is not the focus of our research question. In our model, we assume that all infants take their first dose within 24 hours and the full routine vaccination within the next 6 months. 
+
+In applying the ODE models, our modelling process will take two ``stages":
+In the first stage, we shall develop (or modify) several models from the literature. These models shall: apply treatment independently to the infected mothers, and a combined strategy involving a birth dose alongside the routine vaccine to children. Here, the authors will assume that in reality, it will be done in primary health-care settings. These models will be simulated separately just as they have been described. Finally, we shall combine the two separate interventions we have described into a single model. A simulation of the three separate models over time will then produce outputs which will be fed into the second stage. On the matter of stage two, we will only be interested in the number of infants who remain infected after these interventions have been put in place. This output will flow into a larger SSA birth/death model for simulation over several generations.  
+The total contribution of HBV+ children into the larger population will thus be the foundation
+on which the hypothesis of eradication will be shown in this work.
+ 
+ 
+\bibliographystyle{unsrt}
+\bibliography{thesis_draft_refs}
+
+\end{document}

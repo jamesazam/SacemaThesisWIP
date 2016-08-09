@@ -1,0 +1,40 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+
+@Article{Pan2012,
+  Title                    = {An algorithm for risk assessment and intervention of mother to child transmission of hepatitis B virus},
+  Author                   = {Pan, Calvin Q and Duan, Zhong--Ping and Bhamidimarri, Kalyan R and Zou, Huai--Bin and Liang, Xiao--Feng and Li, Jie and Tong, Myron J},
+  Journal                  = {Clinical Gastroenterology and Hepatology},
+  Year                     = {2012},
+  Number                   = {5},
+  Pages                    = {452--459},
+  Volume                   = {10},
+
+  __markedentry            = {[jamesazam:6]},
+  Owner                    = {jamesazam},
+  Publisher                = {Elsevier},
+  Timestamp                = {2016.06.17}
+}
+
+@Article{thio2015global,
+  Title                    = {Global elimination of mother-to-child transmission of hepatitis B: revisiting the current strategy},
+  Author                   = {Thio, Chloe L and Guo, Nan and Xie, Chan and Nelson, Kenrad E and Ehrhardt, Stephan},
+  Journal                  = {The Lancet Infectious Diseases},
+  Year                     = {2015},
+  Number                   = {8},
+  Pages                    = {981--985},
+  Volume                   = {15},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{tran2009management,
+  Title                    = {Management of hepatitis B in pregnancy: weighing the options.},
+  Author                   = {Tran, TRAM T},
+  Journal                  = {Cleveland Clinic journal of medicine},
+  Year                     = {2009},
+  Pages                    = {S25--9},
+  Volume                   = {76}
+}
+

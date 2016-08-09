@@ -1,0 +1,314 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{acerbi2002spectral,
+  Title                    = {Spectral measures of risk: a coherent representation of subjective risk aversion},
+  Author                   = {Acerbi, Carlo},
+  Journal                  = {Journal of Banking \& Finance},
+  Year                     = {2002},
+  Number                   = {7},
+  Pages                    = {1505--1518},
+  Volume                   = {26},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{Acerbi(CES-2002),
+  Title                    = {On the {C}oherence of {E}xpected {S}hortfall},
+  Author                   = {Acerbi, Carlo and Tasche, Dirk},
+  Journal                  = {Journal of Banking \& Finance},
+  Year                     = {2002},
+  Number                   = {7},
+  Pages                    = {1487--1503},
+  Volume                   = {26},
+
+  Publisher                = {Elsevier}
+}
+
+@Book{alexander2008market,
+  Title                    = {Market Risk Analysis, Pricing, Hedging and Trading Financial Instruments},
+  Author                   = {Alexander, C.},
+  Publisher                = {Wiley},
+  Year                     = {2008},
+  Series                   = {Market Risk Analysis},
+
+  ISBN                     = {9780470772812}
+}
+
+@Article{andersson2001credit,
+  Title                    = {Credit risk optimization with conditional value-at-risk criterion},
+  Author                   = {Andersson, Fredrik and Mausser, Helmut and Rosen, Dan and Uryasev, Stanislav},
+  Journal                  = {Mathematical Programming},
+  Year                     = {2001},
+  Number                   = {2},
+  Pages                    = {273--291},
+  Volume                   = {89},
+
+  Publisher                = {Springer}
+}
+
+@Article{artzner1999coherent,
+  Title                    = {Coherent measures of risk},
+  Author                   = {Artzner, Philippe and Delbaen, Freddy and Eber, Jean-Marc and Heath, David},
+  Journal                  = {Mathematical finance},
+  Year                     = {1999},
+  Number                   = {3},
+  Pages                    = {203--228},
+  Volume                   = {9},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{assessmentglobal,
+  Title                    = {A Global Framework for Insurer Solvency Assessment},
+  Author                   = {Assessment, Insurer Solvency},
+  Year                     = {2004}
+}
+
+@Book{bodie2010investments,
+  Title                    = {Investments},
+  Author                   = {Bodie, Z. and Kane, A. and Marcus, A.},
+  Publisher                = {McGraw-Hill Education},
+  Year                     = {2010},
+  Series                   = {McGraw-Hill/Irwin series in finance, insurance, and real estate},
+
+  ISBN                     = {9780073530703},
+  Lccn                     = {2010018924}
+}
+
+@Article{cai2007optimal,
+  Title                    = {Optimal retention for a stop-loss reinsurance under the VaR and CTE risk measures},
+  Author                   = {Cai, Jun and Tan, Ken Seng},
+  Journal                  = {Astin Bulletin},
+  Year                     = {2007},
+  Number                   = {1},
+  Pages                    = {93},
+  Volume                   = {37},
+
+  Publisher                = {CEUTERICK SA}
+}
+
+@Book{capasso2008,
+  Title                    = {An {I}ntroduction to {C}ontinuous-{T}ime {S}tochastic {P}rocesses: {T}heory, {M}odels, and {A}pplications to {F}inance, {B}iology, and {M}edicine},
+  Author                   = {Capasso, V. and Bakstein, D.},
+  Publisher                = {Birkh{\"a}user Boston},
+  Year                     = {2008},
+  Series                   = {Modeling and Simulation in Science, Engineering and Technology},
+
+  ISBN                     = {9780817644284}
+}
+
+@Book{Marek(2010),
+  Title                    = {Mathematics for Finance: An Introduction to Financial Engineering},
+  Author                   = {Capi{\'n}ski, M. and Zastawniak, T.},
+  Publisher                = {Springer London},
+  Year                     = {2010},
+  Series                   = {Springer Undergraduate Mathematics Series},
+
+  ISBN                     = {9780857290816},
+  Lccn                     = {2010938854}
+}
+
+@Article{capinski_hedging_2015,
+  Title                    = {Hedging Conditional Value at Risk with options},
+  Author                   = {M.J. Capinski},
+  Journal                  = {European Journal of Operational Research},
+  Year                     = {2015},
+  Pages                    = {1443--1471},
+  Volume                   = {242},
+
+  Publisher                = {Elsevier}
+}
+
+@Book{Capinski(2014),
+  Title                    = {{P}ortfolio {T}heory and {R}isk {M}anagement},
+  Author                   = {M.J. Capinski and P.E. Kopp},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2014},
+
+  Owner                    = {Capinski}
+}
+
+@Article{daykin1987solvency,
+  Title                    = {The solvency of a general insurance company in terms of emerging costs},
+  Author                   = {Daykin, CD and Bernstein, GD and Coutts, SM and Devitt, ERF and Hey, GB and Reynolds, DIW and Smith, PD},
+  Journal                  = {Astin Bulletin},
+  Year                     = {1987},
+  Number                   = {01},
+  Pages                    = {85--132},
+  Volume                   = {17},
+
+  Publisher                = {Cambridge Univ Press}
+}
+
+@Book{durrett2010probability,
+  Title                    = {Probability: theory and examples},
+  Author                   = {Durrett, Rick},
+  Publisher                = {Cambridge university press},
+  Year                     = {2010}
+}
+
+@Article{follmer1999quantile,
+  Title                    = {Quantile hedging},
+  Author                   = {F{\"o}llmer, Hans and Leukert, Peter},
+  Journal                  = {Finance and Stochastics},
+  Year                     = {1999},
+  Number                   = {3},
+  Pages                    = {251--273},
+  Volume                   = {3},
+
+  Publisher                = {Springer}
+}
+
+@Article{Black_Scholes,
+  Title                    = {The Pricing of Options and Corporate Liabilities},
+  Author                   = {Fischer Black, Myron Scholes},
+  Journal                  = {Journal of Political Economy},
+  Year                     = {1973},
+  Number                   = {3},
+  Pages                    = {637-654},
+  Volume                   = {81},
+
+  Abstract                 = {If options are correctly priced in the market, it should not be possible to make sure profits by creating portfolios of long and short positions in options and their underlying stocks. Using this principle, a theoretical valuation formula for options is derived. Since almost all corporate liabilities can be viewed as combinations of options, the formula and the analysis that led to it are also applicable to corporate liabilities such as common stock, corporate bonds, and warrants. In particular, the formula can be used to derive the discount that should be applied to a corporate bond because of the possibility of default.},
+  ISSN                     = {00223808, 1537534X},
+  Publisher                = {University of Chicago Press}
+}
+
+@Article{klein1995solvency,
+  Title                    = {Solvency monitoring in the twenty-first century},
+  Author                   = {Klein, Robert W and Barth, Michael M},
+  Journal                  = {Journal of Insurance Regulation},
+  Year                     = {1995},
+  Number                   = {3},
+  Pages                    = {256},
+  Volume                   = {13},
+
+  Publisher                = {National Association of Insurance Commissioners}
+}
+
+@Book{koziol1990hedging,
+  Title                    = {Hedging: Principles, Practices, and Strategies for Financial Markets},
+  Author                   = {Koziol, J.D.},
+  Publisher                = {Wiley},
+  Year                     = {1990},
+
+  ISBN                     = {9780471635604},
+  Lccn                     = {lc89008963}
+}
+
+@Book{kwok2008mathematical,
+  Title                    = {Mathematical Models of Financial Derivatives},
+  Author                   = {Kwok, Y.K.},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2008},
+  Series                   = {Springer Finance / Springer Finance Textbooks},
+
+  ISBN                     = {9783540686880},
+  Lccn                     = {2008924369}
+}
+
+@Book{lyuu2002financial,
+  Title                    = {Financial Engineering and Computation: Principles, Mathematics, Algorithms},
+  Author                   = {Lyuu, Y.D.},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2002},
+
+  ISBN                     = {9780521781718},
+  Lccn                     = {2001043916}
+}
+
+@Article{melnikov2012dynamic,
+  Title                    = {Dynamic hedging of conditional value-at-risk},
+  Author                   = {Melnikov, Alexander and Smirnov, Ivan},
+  Journal                  = {Insurance: Mathematics and Economics},
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {182--190},
+  Volume                   = {51},
+
+  Publisher                = {Elsevier}
+}
+
+@Book{mikosch1998elementary,
+  Title                    = {Elementary Stochastic Calculus with Finance in View},
+  Author                   = {Mikosch, T.},
+  Publisher                = {World Scientific},
+  Year                     = {1998},
+  Series                   = {Advanced series on statistical science \& applied probability},
+
+  ISBN                     = {9789810235437},
+  Lccn                     = {98026351}
+}
+
+@Article{on_the_solvency_of_insurance_companies,
+  Title                    = {On the solvency of insurance companies},
+  Author                   = {Pentik{\"a}inen, T},
+  Journal                  = {Astin Bulletin},
+  Year                     = {1967},
+  Number                   = {03},
+  Pages                    = {236--247},
+  Volume                   = {4},
+
+  Publisher                = {Cambridge Univ Press}
+}
+
+@Article{rockafellar2000optimization,
+  Title                    = {Optimization of conditional value-at-risk},
+  Author                   = {Rockafellar, R Tyrrell and Uryasev, Stanislav},
+  Journal                  = {Journal of risk},
+  Year                     = {2000},
+  Pages                    = {21--42},
+  Volume                   = {2}
+}
+
+@Book{roman2004introduction,
+  Title                    = {Introduction to the Mathematics of Finance: From Risk Management to Options Pricing},
+  Author                   = {Roman, S.},
+  Publisher                = {Springer},
+  Year                     = {2004},
+  Series                   = {Undergraduate Texts in Mathematics},
+
+  ISBN                     = {9780387213644},
+  Lccn                     = {2004046863}
+}
+
+@Book{sandstrom2010handbook,
+  Title                    = {Handbook of solvency for actuaries and risk managers: theory and practice},
+  Author                   = {Sandstr{\"o}m, Arne},
+  Publisher                = {CRC Press},
+  Year                     = {2010}
+}
+
+@Article{szego2002measures,
+  Title                    = {Measures of risk},
+  Author                   = {Szeg{\"o}, Giorgio},
+  Journal                  = {Journal of Banking \& Finance},
+  Year                     = {2002},
+  Number                   = {7},
+  Pages                    = {1253--1272},
+  Volume                   = {26},
+
+  Publisher                = {Elsevier}
+}
+
+@article{medley2001hepatitis,
+  title={Hepatitis-B virus endemicity: heterogeneity, catastrophic dynamics and control},
+  author={Medley, Graham F and Lindop, Nathan A and Edmunds, W John and Nokes, D James},
+  journal={Nature medicine},
+  volume={7},
+  number={5},
+  pages={619--624},
+  year={2001},
+  publisher={Nature Publishing Group}
+}
+@article{zhang2012analysisHBVmodel,
+  title={The analysis and application of an HBV model},
+  author={Zhang, Suxia and Zhou, Yicang},
+  journal={Applied Mathematical Modelling},
+  volume={36},
+  number={3},
+  pages={1302--1312},
+  year={2012},
+  publisher={Elsevier}
+}
