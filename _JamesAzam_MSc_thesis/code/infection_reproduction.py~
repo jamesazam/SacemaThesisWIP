@@ -1,0 +1,69 @@
+"""  calculate the roots of a square polynomial plot the polynomial and the phase portrait """
+import numpy as np
+import pylab as pl
+import scipy
+import scipy.integrate
+import math
+
+if __name__=='__main__':
+   b= 0.035       # birth rate              Lambda
+   e=0.01012         #natural death rate       mu
+   d=0.46        # transmission rate       beta
+   c=1          # contact rate            c
+   p=0.64          # proportion of asymptomatic infected  p
+   g=0.001         #rate of asymptomatic becoming symptomatic theta
+   h=0.56         # disease death rate                  sigma
+   s=0.111         #recovery rate of asymptomatic           delta1
+   j=0.15           # recovery rate of symptomatic          delta2
+   ks=0.01         # rate at which Susceptibles send tweets       alpha1
+           # rate of media campaigns
+   ke= 0.15         # rate at which exposed send tweets       alpha2
+   kia= 0.073      # rate at which infected asymptomatic send tweets       alpha3
+   kis= 0.3      # rate at which infected symptomatic send tweets       alpha4
+   kir= 0.043      # rate at which recovered send tweets       alpha5
+   w= 0.25      # out dating rate of media campaigns            omega
+   N=20000       #total population size,N
+   a=0.09       # latent period   1/gamma  a=gamma
+   S=900       #susceptibles
+   E=50      #exposed
+   Ia=7      # infected asymptomatic
+   Is=3       # infected symptomatic
+   R=0       # recovered
+   M= 0.4        #  rate at which media campaigns send messages
+   mstar= (b*ks)/(w*e)
+   q1=(a+e)
+   q2=(e+s+g)
+   q3=(j+h+e)
+   q4= e
+#   phi1= f/q2
+#   phi2= (f*g)/(q1*q2)
+#   PHI= 1.0 + (j*phi1) + (k*phi2) 
+   # m=(z/N)*(Ii + j*Ai + k*Ci)  #lambda
+   x = np.linspace(0.0, 1.0, 50.0)   # G replaces x to avoid confusion with dxdt
+#   ax.set_ylim([0, 1])
+   # print x
+   Ro= (c*d*a*(1.0-mstar)/(q1*q2*q3))*(p*g + (1.0-p)*q2)
+   # R1 = (f/(f+d))*((c+d+(1.0-e)*b)/(c+d+b))*(k/(d+s))*(g/(d+g+h))*x
+   # Rv= (((c+d+(1.0-e)*b)/(c+d+b))*((1.0)/(d+f)) + (j/(d+h))*(f/(f+d)))*x
+   # Rc= (((1.0)/(f+d)) + (f/(f+d))* (j/(d+g+h)) +  (k/(d+s))*(f/(f+d))*(g/(d+g+h)))*x
+   # Ro= (((1.0)/(f+d))+ (j/(d+h))*(f/(f+d)))*x
+   # pl.plot(x,Rvac,'b-', x ,Rv,'r--',x, Rc,'r *',x, Ro,'b +')
+   # pl.show()
+   #pl.xlabel('Rate of infection')
+   #pl.ylabel(' Reproduction number')
+   #pl.legend (['Rvac','Rv','Rc','Ro'],loc='upper left')
+   #pl.show()
+#   print Ro
+   Ao= w*q1*q2*q3*q4*(p*a*(1.0+(j/q4))+ a*q2*(1.0-p)*(1.0+(j/q4)) + q2*q3 + p*a*q3*(1.0+s));
+   A2= w*q1*q2*q3*(1.0-Ro);
+   A1=w*(q1**2)*(q2**2)*(q3**2)*q4+w*q1*q2*q3*((-a*(c*d-e)*(p*g + q2*(1.0-p))+e*(p*a + q2)*q3)*q4+a*e*(p*q3*s+(p*g + q2*(1.0-p)*j))+ c*d*a*b*(p*g+q2*(1.0-p))*(q2*(q3*q4*ke+(1.0-p)*a*(q4*kis+kir*j))+p*a*(q3*(q4*kia+kir*s)+g*(q4*kis+kir*j))));
+   #A1 = c + d +((1.0)-e)*(b+d-(x/N)*(a)*(((1.0)/(f+d))+(K3/detV)))
+   B= w*q1*q2*q3*(1.0-x);
+   infection= (-A1 + ((A1**2.0)-4.0*Ao*B)**(0.5))/Ao;  # lambda as a function of R0
+   pl.xlabel('reproduction number')
+   pl.ylabel('force of infection')
+   pl.plot(x,B, 'g-')
+   pl.show()
+
+
+

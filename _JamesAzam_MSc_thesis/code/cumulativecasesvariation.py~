@@ -1,0 +1,89 @@
+ #from scipy import odeint
+import scipy
+import scipy.integrate
+from pylab import * # for plotting commands
+import pylab as pl
+from itertools import cycle
+lines=["-", "--","-.",":"]
+#lines=["-", "-","-","-"]
+linecycler = cycle(lines)
+b= 0.8         # birth rate                               Lambda
+e= 0.0643         #natural death rate                         mu
+d=0.3   #0.00001 #1.6*10**-6   # transmission rate                           beta
+c=1.5776        # contact rate                                  c
+p=0.6559          # proportion of asymptomatic infected             p
+g=0.4640         #rate of asymptomatic becoming symptomatic       theta
+h=0.0249        # disease death rate                              sigma
+s=0.1231         #recovery rate of asymptomatic                     delta1
+j=0.0603          # recovery rate of symptomatic                   delta2
+ks= 0.000034 #0.00008 #0.001         # rate at which Susceptibles send tweets          alpha1
+           # rate of media campaigns
+ke=0.0649   #0.1         # rate at which exposed send tweets                  alpha2
+kia=  0.0212 #0.073      # rate at which infected asymptomatic send tweets       alpha3
+kis=0.0453 #0.4     # rate at which infected symptomatic send tweets       alpha4
+kir= 0.0000000002 #0.1     # rate at which recovered send tweets                   alpha5
+w= 0.99      # out dating rate of media campaigns 
+N=1000        #total population size,N
+a= 0.385        # latent period   1/gamma  a=gamma
+S=2000       #susceptibles
+E=500       #exposed
+Ia=0       # infected asymptomatic
+Is=10      # infected symptomatic
+R=0       # recovered
+M= 0.4        #  rate at which media campaigns send messages
+mstar= (b*ks)/(w*e)
+q1=(a+e)
+q2=(e+s+g)
+q3=(j+h+e)
+q4= e 
+KZ=[10,20,30,40,50]
+KE=[0.00008,0.00004,0.00002]
+KW = [0.0000014,0.0000054,0.0000084]
+#KW = [0.00014,0.00054,0.00084]
+#KE = [0.0008,0,0,0,0]  #alpha1
+KU= [0,0.002,0,0,0]      # alpha2
+KV= [0,0, 0.005,0,0]    #alpha3
+KH= [0.002,0.004,0.008]    #alpha4
+KD= [0,0,0,0,0.001]   #alpha5
+def deriv1(X,t): # return derivatives of the array y
+  return scipy.array([ b -  (( d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) + e)*X[0], X[0]*(d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) - q1*X[1] , p*a*X[1] - q2*X[2], (1.0 -p)*a*X[1] + a*X[2] - q3*X[3], s*X[2] + j*X[3] - e*X[4], ks*X[0] + ke*X[1]+ kia*X[2] + kis*X[3] + kir*X[4] - w*X[5]]) #return scipy.array([ y[1], a*y[0]+b*y[1]], )
+   
+  
+#def deriv2(X,t): # return derivatives of the array y
+ke =0.00008
+#   return scipy.array([ b -  (( d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) + e)*X[0], X[0]*(d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) - q1*X[1] , p*a*X[1] - q2*X[2], (1.0 -p)*a*X[1] + a*X[2] - q3*X[3], s*X[2] + j*X[3] - e*X[4], ks*X[0] + ke*X[1]+ kia*X[2] + kis*X[3] + kir*X[4] - w*X[5]])#return scipy.array([ y[1], a*y[0]+b*y[1]], )
+#   
+# 
+#def deriv3(X,t): # return derivatives of the array y
+#   ke =0.02
+#   return scipy.array([ b -  (( d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) + e)*X[0], X[0]*(d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) - q1*X[1] , p*a*X[1] - q2*X[2], (1.0 -p)*a*X[1] + a*X[2] - q3*X[3], s*X[2] + j*X[3] - e*X[4], ks*X[0] + ke*X[1]+ kia*X[2] + kis*X[3] + kir*X[4] - w*X[5]])#return scipy.array([ y[1], a*y[0]+b*y[1]], )
+#     
+    
+time = scipy.linspace(0, 100, 1000)
+
+#xinit = scipy.array([900,50, 0, Io, 0, 0.4]) # initial values
+#figure()
+for ks in KW:
+# for ke in KU:
+#  for kia in KV:
+#   for kis in KH:
+#    for kir in KD:
+     xinit = scipy.array([35000,0, 0, 1, 0, 0.0000002]) # initial values
+     X1 = scipy.integrate.odeint(deriv1,xinit,time)
+     pl.plot(time, X1[:,1]*a*(1-p) + g*X1[:,2],next(linecycler),lw=2)
+     pl.axis([0, 14.0, 0, 25])           # plot phase portrait E(M)
+#X2 = scipy.integrate.odeint(deriv2,xinit,time)
+#X3 = scipy.integrate.odeint(deriv3,xinit,time)
+
+
+
+#pl.plot(time,X2[:,3], 'r')
+#pl.plot(time,X3[:,3], 'g')
+pl.xlabel('Time (days)')
+pl.ylabel('Cumulative number of Ebola cases')
+pl.axis([0, 25.0, 0, 15])           # plot phase portrait E(M)
+#xlim(0,100)
+#pylab.grid()
+pl.legend(("$\\alpha_1="+str(KW[0])+"$","$\\alpha_1="+str(KW[1])+"$", "$\\alpha_1="+str(KW[2])+"$"), loc="upper right")#,"$\\gamma_{3}="+str(KE[3])+"$")
+#pl.text(60, .002, r'$\mu=100,\ \sigma=15$')
+pl.show()
