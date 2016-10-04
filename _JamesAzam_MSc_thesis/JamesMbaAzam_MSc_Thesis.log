@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.12)  4 OCT 2016 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.12)  4 OCT 2016 17:55
 entering extended mode
 **./JamesMbaAzam_MSc_Thesis.tex
 (JamesMbaAzam_MSc_Thesis.tex
@@ -1756,7 +1756,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 155.
 
-<UScrest-WM.jpg, id=130, 49.8663pt x 69.3792pt>
+<UScrest-WM.jpg, id=134, 49.8663pt x 69.3792pt>
 File: UScrest-WM.jpg Graphic file (type jpg)
  <use UScrest-WM.jpg>
 Package pdftex.def Info: UScrest-WM.jpg used on input line 155.
@@ -1813,9 +1813,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 ]) [6
 
 
-] (JamesMbaAzam_MSc_Thesis.toc) [7
+] (JamesMbaAzam_MSc_Thesis.toc [7
 
-] [8]
+]) [8]
 (JamesMbaAzam_MSc_Thesis.lof) [9
 
 ] (JamesMbaAzam_MSc_Thesis.lot) [10
@@ -1867,26 +1867,26 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 12.
 
-[7] [8] <./figs/NewModel.png, id=332, 845.19765pt x 597.6729pt>
+[7] [8] <./figs/NewModel.png, id=337, 845.19765pt x 597.6729pt>
 File: ./figs/NewModel.png Graphic file (type png)
 
 <use ./figs/NewModel.png>
-Package pdftex.def Info: ./figs/NewModel.png used on input line 44.
+Package pdftex.def Info: ./figs/NewModel.png used on input line 43.
 (pdftex.def)             Requested size: 549.37196pt x 388.48277pt.
 
-Overfull \hbox (127.37196pt too wide) in paragraph at lines 44--45
+Overfull \hbox (127.37196pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
 [9
 
  <./figs/NewModel.png (PNG copy)>]
-Overfull \hbox (5.27132pt too wide) in paragraph at lines 64--64
+Overfull \hbox (5.27132pt too wide) in paragraph at lines 63--63
 []|\T1/ppl/m/n/10.95 Parameter| 
  []
 
 
-Overfull \hbox (1.70406pt too wide) in paragraph at lines 62--76
+Overfull \hbox (1.70406pt too wide) in paragraph at lines 61--75
  [][] 
  []
 
@@ -1922,28 +1922,29 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
 Package rerunfilecheck Info: File `JamesMbaAzam_MSc_Thesis.out' has not changed
 .
-(rerunfilecheck)             Checksum: 0C11412328C546C8518D2441BD531F43;1470.
+(rerunfilecheck)             Checksum: EAF9064DFBCD6CD0737FCA4157106824;1559.
  ) 
 Here is how much of TeX's memory you used:
- 38205 strings out of 493334
- 739845 string characters out of 3139240
+ 38210 strings out of 493334
+ 739860 string characters out of 3139240
  945644 words of memory out of 3000000
  40968 multiletter control sequences out of 15000+200000
- 48985 words of font info for 113 fonts, out of 3000000 for 9000
+ 49898 words of font info for 117 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,16n,101p,10505b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/JAMESAZAM/AppData/Roaming/MiKTe
-X/2.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/JAMESAZAM/AppData/Roaming
-/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/up
-lr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on JamesMbaAzam_MSc_Thesis.pdf (23 pages, 234072 bytes).
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Users/JAMESAZAM/AppData/Roaming/MiKTeX/2.9/fo
+nts/type1/public/mathpazo/fplmr.pfb><C:/Users/JAMESAZAM/AppData/Roaming/MiKTeX/
+2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
+ino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on JamesMbaAzam_MSc_Thesis.pdf (23 pages, 242451 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
