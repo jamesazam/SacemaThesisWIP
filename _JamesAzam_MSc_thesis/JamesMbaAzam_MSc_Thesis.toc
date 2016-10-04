@@ -19,6 +19,7 @@
 \contentsline {chapter}{\chapternumberline {3}Mathematical Model}{6}{chapter.3}
 \contentsline {subsection}{\numberline {3.0.1}Mathematical Modeling}{7}{subsection.3.0.1}
 \contentsline {subsubsection}{\numberline {3.0.1.1}Model Framework}{8}{subsubsection.3.0.1.1}
-\contentsline {subsubsection}{\numberline {3.0.1.2}Flowchart Description}{8}{subsubsection.3.0.1.2}
+\contentsline {subsection}{\numberline {3.0.2}Model Assumptions}{8}{subsection.3.0.2}
+\contentsline {subsubsection}{\numberline {3.0.2.1}Flowchart Description}{8}{subsubsection.3.0.2.1}
 \contentsline {chapter}{Appendix}{11}{table.caption.13}
 \contentsline {chapter}{List of references}{11}{section*.15}
