@@ -1,0 +1,80 @@
+
+""" Numerical solution of  system of first order ordinary differential equations """
+""" plot the phase portrait and state variables as a function of time """
+
+# import modules for solving 
+import scipy
+import scipy.integrate
+import numpy as np
+# import module for plotting
+import pylab as pl
+#### parameters' values ############
+b=0.035          # birth rate                               Lambda
+e=0.01012         #natural death rate                         mu
+d=0.75        # transmission rate                           beta
+c=1          # contact rate                                  c
+p=0.527          # proportion of asymptomatic infected             p
+g=0.01         #rate of asymptomatic becoming symptomatic       theta
+h=0.6         # disease death rate                              sigma
+s=0.3         #recovery rate of asymptomatic                     delta1
+j=0.01           # recovery rate of symptomatic                   delta2
+ks=0.01         # rate at which Susceptibles send tweets          alpha1
+           # rate of media campaigns
+ke=0.15         # rate at which exposed send tweets                  alpha2
+kia=0.073      # rate at which infected asymptomatic send tweets       alpha3
+kis=0.475     # rate at which infected symptomatic send tweets       alpha4
+kir=0.155      # rate at which recovered send tweets                   alpha5
+w= 0.425      # out dating rate of media campaigns                      omega
+N=1000        #total population size,N
+a= 0.385        # latent period   1/gamma  a=gamma
+S=900       #susceptibles
+E=50       #exposed
+Ia=0       # infected asymptomatic
+Is=3      # infected symptomatic
+R=0       # recovered
+M= 0.4        #  rate at which media campaigns send messages
+mstar= (b*ks)/(w*e)
+q1=(a+e)
+q2=(e+s+g)
+q3=(j+h+e)
+q4= e 
+for i in range(5):
+ def dX_dt(X, time=0):         # specify the initial time point t0=0
+#   m=(z/N)*(Ii + j*Ai + k*Ci)  #lambda
+   y = scipy.array([ b -  (( d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) + e)*X[0], X[0]*(d*c*(1.0-X[5])*X[3]/(X[1]+ X[2] + X[3]+ X[4] + X[0])) - q1*X[1] , p*a*X[1] - q2*X[2], (1.0 -p)*a*X[1] + a*X[2] - q3*X[3], s*X[2] + j*X[3] - e*X[4], ks*X[0] + ke*X[1]+ kia*X[2] + kis*X[3] + kir*X[4] - w*X[5]])  # represent the dynamical system with x[0,1,2,3,4,5]=(S,E, Ia, Is,R,M)
+   return y
+
+if __name__ == "__main__":
+
+	time = scipy.linspace(0, 50, 1000)                         # create 100 time points starting at t0=0
+
+	X0 = scipy.array([900,50, 0, 3, 0, 0.4])                                    # initials conditions: x0=10  and y0=5
+	X, infodict = scipy.integrate.odeint(dX_dt, X0, time, full_output=True)
+	infodict['message']                                   #'Integration successful.'
+
+	#pl.plot(  time, X[:,1], 'g',time, X[:,2], 'c',  time, X[:,3], 'r', time, X[:,4], 'm', time, X[:,5], 'k' )     # x = X[:,0] and y = X[:,1]
+	#pl.plot(time, X[:,0],'b',lw=2)
+	#pl.plot(time, X[:,1],'bx-',lw=2)
+	#pl.plot(time, X[:,2],'r--',lw=2)
+	#pl.plot(time, X[:,3],'g',lw=2);
+	#pl.plot(time, X[:,4],'b:',lw=2)
+	#pl.legend(['E', 'Ia', 'Is', 'R', 'M'])  # plot the variables as functions of time 
+        #pl.plot(X[:,0], X[:,3])
+        #pl.axis([0, 30.0, -50, 90])           # plot phase portrait E(M)
+	pl.plot(X[:,5], X[:,2])           # plot phase portrait Ia(M)
+	#pl.plot(X[:,5], X[:,3])           # plot phase portrait Is(M)
+	#pl.plot(X[:,5], X[:,1])
+        #pl.plot(X[:,3], X[:,2])
+	pl.xlabel('Time (Days)')
+        #pl.ylabel('Media campaign ')
+        #pl.xlabel('Infected  asymptomatic population')
+        #pl.ylabel('Susceptible population')
+	#pl.ylabel('Exposed') 
+	#pl.ylabel('Infected  asymptomatic population')             
+	pl.ylabel('Infected  symptomatic population')
+	#pl.xlabel('Media campaigns rate')
+	#pl.ylim([0,100])
+
+	pl.show()
+
+

@@ -224,6 +224,18 @@
   Timestamp                = {2016.07.25}
 }
 
+@Article{trepo2014hepatitis,
+  Title                    = {Hepatitis B virus infection},
+  Author                   = {Tr{\'e}po, Christian and Chan, Henry LY and Lok, Anna},
+  Journal                  = {The Lancet},
+  Year                     = {2014},
+  Number                   = {9959},
+  Pages                    = {2053--2063},
+  Volume                   = {384},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{tran2009management,
   Title                    = {Management of hepatitis B in pregnancy: weighing the options.},
   Author                   = {Tran, TRAM T},

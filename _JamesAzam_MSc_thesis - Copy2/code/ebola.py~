@@ -1,0 +1,62 @@
+"""  calculate the roots of a square polynomial plot the polynomial and the phase portrait """
+import numpy as np
+import pylab as pl
+import scipy
+import scipy.integrate
+import math
+
+if __name__=='__main__':
+   b= 0.029       # birth rate              Lambda
+   e=0.0081        #natural death rate       mu
+   d= 0.5745 #0.3906 #0.5       # transmission rate       beta
+   c= 3.8852         # contact rate            c
+   p=0.0575          # proportion of asymptomatic infected  p
+   g= 0.7359        #rate of asymptomatic becoming symptomatic theta
+   h= 0.1625          # disease death rate                  sigma
+   s=  0.6476          #recovery rate of asymptomatic           delta1
+   j= 0.3693           # recovery rate of symptomatic          delta2
+   ks= 0.0000007 #0.008          # rate at which Susceptibles send tweets       alpha1
+           # rate of media campaigns
+   ke= 0.00000019 #0.05780019          # rate at which exposed send tweets       alpha2
+   kia= 0.00000043 #0.102708       # rate at which infected asymptomatic send tweets       alpha3
+   kis=  0.000087 #0.018      # rate at which infected symptomatic send tweets       alpha4
+   kir= 0.00000061 #0.0541042       # rate at which recovered send tweets       alpha5
+   w=  0.6185 #0.87       # out dating rate of media campaigns            omega
+   a=0.0575      # latent period   1/gamma  a=gamma
+   mstar= (b*ks)/(w*e)
+   q1=(a+e)
+   q2=(e+s+g)
+   q3=(j+h+e)
+   q4= e
+   x = np.linspace(0.0, 10.0, 50.0)   # G replaces x to avoid confusion with dxdt
+   #set_ylim([0, 1])
+   # print x
+   y = np.linspace(0.0, 10.0, 50.0) 
+   Ro= (c*d*a*(1.0-mstar)*(p*g + (1.0-p)*q2)/(q1*q2*q3))
+#   print Ro
+   Ao= w*q1*q2*q3*e*(p*a*(1.0+(j/e))+ a*q2*(1.0-p)*(1.0+(j/e)) + q2*q3 + p*a*q3*(e +s))
+   A2= w*q1*q2*q3*e*(1.0-Ro)
+   A1=w*(q1**2)*(q2**2)*(q3**2)*q4+w*q1*q2*q3*((-a*(c*d-e)*(p*g + q2*(1.0-p))+e*(p*a + q2)*q3)*q4+a*e*(p*q3*s+(p*g + q2*(1.0-p)*j))+ c*d*a*b*(p*g+q2*(1.0-p))*(q2*(q3*q4*ke+(1.0-p)*a*(q4*kis+kir*j))+p*a*(q3*(q4*kia+kir*s)+g*(q4*kis+kir*j))))
+   #A1 = c + d +((1.0)-e)*(b+d-(x/N)*(a)*(((1.0)/(f+d))+(K3/detV)))
+   print A1, A2, Ao
+   print 'Ro=', Ro, 'Ao=', Ao, 'A1=', A1, 'A2=', A2
+   p =np.array([ Ao, A1, A2])
+   jj=np.roots(p)
+   print     'Roots=', jj
+   r=np.linspace(0.0, 5.0, 100.0)
+   B= w*q1*q2*q3*e*(1.0-r);
+   discriminant =  A1**2.0 - 4*Ao*A2
+   print 'discriminant=', discriminant
+   infection= (-A1 +((A1**2.0)-4*Ao*B))**0.5/Ao;  # lambda as a function of R0
+   polyn= Ao*(x**2) + A1*x + A2; # polynome as a function of lambda
+  # pl.plot(x,polyn,'b-')
+   #pl.show()
+   pl.xlabel('reproduction number')
+   pl.ylabel('force of infection')
+   #pl.ylabel(' quadratic ')
+   #
+   #pl.plot(r, infection)
+  #pl.show()
+
+
+
