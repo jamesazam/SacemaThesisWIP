@@ -17,9 +17,8 @@
 \contentsline {subsection}{\numberline {2.2.1}Infant Vaccination}{5}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Treatment of Infected Mothers}{5}{subsection.2.2.2}
 \contentsline {chapter}{\chapternumberline {3}Mathematical Model}{6}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Mathematical Modeling}{7}{subsection.3.0.1}
-\contentsline {subsubsection}{\numberline {3.0.1.1}Model Framework}{8}{subsubsection.3.0.1.1}
-\contentsline {subsection}{\numberline {3.0.2}Model Assumptions}{8}{subsection.3.0.2}
-\contentsline {subsubsection}{\numberline {3.0.2.1}Flowchart Description}{8}{subsubsection.3.0.2.1}
+\contentsline {subsection}{\numberline {3.0.1}Model Framework}{7}{subsection.3.0.1}
+\contentsline {section}{\numberline {3.1}Model Assumptions}{8}{section.3.1}
+\contentsline {subsubsection}{\numberline {3.1.0.1}Flowchart Description}{8}{subsubsection.3.1.0.1}
 \contentsline {chapter}{Appendix}{11}{table.caption.13}
 \contentsline {chapter}{List of references}{11}{section*.15}

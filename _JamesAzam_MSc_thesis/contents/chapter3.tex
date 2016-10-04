@@ -9,7 +9,7 @@ In the first stage, an appropriate model from the literature will be adapted (an
 At stage two of the process, a sort of a ``reservoir'' will be created to keep track of the number of infants who remain infected after these interventions have been put in place. This output will flow into a larger population model for sub-Saharan Africa for simulation over several generations.  
 The total contribution of HBV+ children into the larger population will thus be the foundation on which the hypothesis of eradication will be shown in this work.
 
-\subsection{Mathematical Modeling}
+\subsection{Model Framework}
 We formulate a mathematical model to study the long term contribution of infected neonates to the general population-level infection dynamics. Our model studies the  impact of the administration of a birth and routine vaccine to infants, as well as treatment to infected pregnant women in sub-Saharan Africa where HBV is highly endemic.  
 
 In our model, we assume that infants destined to take their first dose within 24 hours and the full routine vaccination within the next 6 months. This model serves as a feeder into a larger population model. It will feed the number of infants who remain infected (acute and chronic),  after several iterations, into the population model we shall develop.
@@ -18,12 +18,10 @@ To the best of our knowledge, not many models which consolidate HBV vertical tra
 
 To answer our research questions, we modify the models by \cite{mann2011modelling_NewZealand,zou2010modeling} by amalgamating ideas from the models in those papers. Of particular interest is the age-structured model by \cite{mann2011modelling_NewZealand}. We adapt the equation set (1) in \cite{mann2011modelling_NewZealand} for infants aged $0-1.25$ years since it captures the age structure of the neonates we intend to study, and modify it by including an extra dose of vaccination denoting the routine vaccination. For sub-question \ref{sub question 2}, we assume that there are two types of immunity induced in the infants for each stage of vaccination: for the birth dose, the infants acquire a temporary immunity which wanes. However, they acquire long term immunity if they proceed to receive the routine vaccination. The work by \cite{mclean1994modelling} extrapolated the vaccine-induced immunity period to be an average of 22.2 years from data which was collected over a period of 7 years. This vaccine-induced immunity acquired by these infants, we assume, is comparable to that acquired by the carrier individuals who clear the infection. This assumption is in contradiction to that of the model of \cite{zou2010modeling}. Our assumption is, however, justifiable since we only intend to simulate our model over a number of generations which amounts to a time period less than the average vaccine-induced immunity duration. It is therefore safe to equate the two types of acquired immunities described in our model and classify those two groups of individuals into the same epidemiological group. Again, in agreement with \cite{zhang2012analysisHBVmodel}, we assume that all infants born infected will be classified as chronic carriers. Finally, in accordance with \cite{mann2011modelling_NewZealand}, our model assumes that HBV-related deaths in the birth cohort in totality are negligible.
 
-\subsubsection{Model Framework}
-The model flowchart in Figure \ref{fig:flowchart} describes a modified SIR type model.
 
-The model consists of the following class of individuals, all of whom are neonates within their first 24 hours of birth: susceptible babies, $S_b,$ infants who receive the routine vaccine, $V_b,$ chronically infected babies, $I_b, $  and those with full immunity either by receving the vaccine or through natural clearance, $R_b$ .
+The model flowchart in Figure \ref{fig:flowchart} describes a modified SIR type model. The model consists of the following class of individuals, all of whom are neonates within their first 24 hours of birth: susceptible babies, $S_b,$ infants who receive the routine vaccine, $V_b,$ chronically infected babies, $I_b, $  and those with full immunity either by receving the vaccine or through natural clearance, $R_b$ .
 
-\subsection{Model Assumptions}
+\section{Model Assumptions}
 The following simplifying assumptions were made in the model below:
 \begin{enumerate}
 	\item There are constant inflows or births. 
@@ -42,43 +40,37 @@ Neonates are either born susceptible or infected and that is how $S$ and $I$ are
 \clearpage 		
 The model flow diagram is represented in Figure \ref{fig:flowchart}. 
 \begin{figure}[h!]
-	\includegraphics[scale=0.70]{infant_vaccination_model}
-	\caption{the model structure indicating vertical transmission and two stages of immunity, the first through the birth vaccine, and final through a sort of booster by routine vaccination. The solid arrows indicate movement of the individuals, whiles the dashed arrows represent initial inflows and deaths.} \label{fig:flowchart}
+	\centering
+	\includegraphics[scale=0.65]{NewModel.png}
+	\caption{the SVIR model structure indicating vertical transmission. The solid arrows indicate movement of the individuals, whiles the dashed arrows represent initial inflows.} \label{fig:flowchart}
 \end{figure}
 
 The systems of ordinary differential equations representing the dynamics described above are as follows:
 \begin{align}
 \begin{split}
-\dfrac{dS}{dt}&=\mu\omega_1(1-\nu C)-(\mu_0+\kappa_1+\eta_2+\eta_1)S+\psi V\\
-\dfrac{dV}{dt}&=\mu(1-\omega_1)+\eta_1S-(\mu_0+\eta_2+\psi)V \\
-\dfrac{dE}{dt}&=\kappa_1S-(\mu_0+\sigma)E \label{eqn: 1}\\
-\dfrac{dI}{dt}&=\sigma E-(\mu_0+\gamma_1)I\\
-\dfrac{dC}{dt}&=(1-\epsilon_m)\mu\omega_1\nu C+q\gamma_1I-(\mu_0+\gamma_2)C\\
-\dfrac{dR}{dt}&=\gamma_2C+(1-q)\gamma_1I+\eta_2(S+V)-\mu_0R
+\dfrac{dS}{dt}&=(1-\pi)\Lambda -\beta S_b(\frac{I_m+C_m}{N_m})-\sigma\eta-muS_b,\\
+\dfrac{dV}{dt}&=\sigma\eta S_b-(\mu+\alpha) V_b\\
+\dfrac{dI}{dt}&=\beta S_b(\frac{I_m+C_m}{N_m}) + \pi\Lambda-\gamma\Gamma-\mu I_b,\\
+\dfrac{dR}{dt}&=\sigma\eta S - (\mu +\alpha) V_b.
 \end{split}
 \end{align}
 The various parameters used in our model are described the following table:
 
 \vspace{1cm}
-\begin{table}[t]
+\begin{table}[h]
 	\centering
-	\begin{tabular}{ |p{1.57cm}|p{12cm}| }
+	\begin{tabular}{ |p{1.57cm}|p{10cm}|p{2cm}| }
 		\hline
-		Parameter& Description \\
+		Parameter& Description &    Source \\
 		\hline
-		$	\mu		$    	& 	birth rate    \\
-		$	\mu_0 $			&  	natural death rate   \\
-		$\kappa_1$ 			& 	MTCT transmission coefficient\\
-		$\epsilon_m$ 		& 	efficacy of treatment of the infected mothers\\
-		$\sigma$ 			& 	rate of progression from exposed state to acute state\\
-		$\gamma_1$			& 	rate of moving from acute infection to carrier state\\
-		$\gamma_2$ 			& 	rate of natural clearance of infection\\
-		$\omega_1$			& 	proportion of infants without successful birth vaccination\\
-		$\eta_1$ 			& 	birth vaccination rate\\
-		$\eta_2$ 			&	routine vaccination rate\\
-		$\psi$				&	waning rate of the birth vaccine\\
-		$\nu$ 				& 	proportion of infants infected at birth\\
-		$q$ 				& 	average probability that an infant proceeds to the carrier state due to inability to clear acute infection\\
+		$\Lambda$    		& 	Total births per year  					&																																								\\
+		$	\mu $					&  	natural death rate   &																																									\\
+		$\beta$ 					& 	mother-to-child contact rate &																																			\\
+		$\gamma$ 			& 	rate of natural clearance of infection										&																							\\
+		$\alpha$ 				& 	rate of acquiring vaccine-induced permanent immunity	&																								\\
+		$\eta  $					& routine vaccination rate																&																								\\
+		$\sigma$ 				& 	proportion of infants who receive the routine vaccine &																							\\
+		$\Gamma$			& 	Proportion of infected babies who clear naturally		&																						\\
 		\hline
 	\end{tabular}
 	\caption{Model parameters and their descriptions}
@@ -91,10 +83,8 @@ The various parameters used in our model are described the following table:
 			Group & Description \\
 			\hline
 			$	S		$    		& 		Susceptible to the infection    \\
-			$	V 		$			&  	 	Infants with the birth dose  	\\
-			$	E 		$			&  	 	Exposed babies  				\\
-			$	I 		$			&  	 	Acutely infected babies   		\\
-			$	C       $ 			& 		HBV Chronic babies				\\
+			$	V 		$			&  	 	Infants with the routine vaccination	\\
+			$	I 		$			&  	 	Chronically infected babies   		\\
 			$	R		$ 			& 		Fully immune individuals		\\
 			\hline
 		\end{tabular}
